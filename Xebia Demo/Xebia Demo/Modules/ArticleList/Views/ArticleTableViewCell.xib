@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ArticleTableViewCell" rowHeight="91" id="KiR-1I-iGe" customClass="ArticleTableViewCell" customModule="Xebia_Demo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="89"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KiR-1I-iGe" id="InA-Xa-I8A">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="89"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hvg-YL-aeT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="89"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="A6Y-rP-pcv" userLabel="Image View">
+                                <rect key="frame" x="20" y="12" width="40" height="40"/>
+                                <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="fDo-Ns-ZZF"/>
+                                    <constraint firstAttribute="height" constant="40" id="jb1-dV-BM2"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lWw-ya-0J0" userLabel="Title Label" colorLabel="IBBuiltInLabel-Red">
+                                <rect key="frame" x="68" y="12" width="330" height="24"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jSG-aT-BfQ" userLabel="Snippet Label" colorLabel="IBBuiltInLabel-Red">
+                                <rect key="frame" x="68" y="42" width="330" height="19.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xlq-Zq-XgU" userLabel="Date Label" colorLabel="IBBuiltInLabel-Red">
+                                <rect key="frame" x="373" y="67.5" width="25" height="13.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleCaption2"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="lWw-ya-0J0" secondAttribute="trailing" constant="16" id="1fQ-q4-xgr"/>
+                            <constraint firstAttribute="trailing" secondItem="jSG-aT-BfQ" secondAttribute="trailing" constant="16" id="9lo-85-jpw"/>
+                            <constraint firstItem="jSG-aT-BfQ" firstAttribute="leading" secondItem="A6Y-rP-pcv" secondAttribute="trailing" constant="8" id="A15-yd-Vxc"/>
+                            <constraint firstItem="jSG-aT-BfQ" firstAttribute="top" secondItem="lWw-ya-0J0" secondAttribute="bottom" constant="6" id="C32-qQ-1qZ"/>
+                            <constraint firstItem="A6Y-rP-pcv" firstAttribute="top" secondItem="lWw-ya-0J0" secondAttribute="top" id="Cev-ZU-0N6"/>
+                            <constraint firstItem="xlq-Zq-XgU" firstAttribute="top" secondItem="jSG-aT-BfQ" secondAttribute="bottom" constant="6" id="HXS-k9-Hmy"/>
+                            <constraint firstAttribute="trailing" secondItem="xlq-Zq-XgU" secondAttribute="trailing" constant="16" id="X5X-1f-mnC"/>
+                            <constraint firstItem="A6Y-rP-pcv" firstAttribute="leading" secondItem="Hvg-YL-aeT" secondAttribute="leading" constant="20" id="YyQ-3X-itu"/>
+                            <constraint firstItem="lWw-ya-0J0" firstAttribute="top" secondItem="Hvg-YL-aeT" secondAttribute="top" constant="12" id="dwz-dL-aNl"/>
+                            <constraint firstItem="lWw-ya-0J0" firstAttribute="leading" secondItem="A6Y-rP-pcv" secondAttribute="trailing" constant="8" id="moy-xj-hrM"/>
+                            <constraint firstAttribute="bottom" secondItem="xlq-Zq-XgU" secondAttribute="bottom" constant="8" id="tay-r8-puj"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Hvg-YL-aeT" firstAttribute="top" secondItem="InA-Xa-I8A" secondAttribute="top" id="Gdc-fa-RhT"/>
+                    <constraint firstAttribute="trailing" secondItem="Hvg-YL-aeT" secondAttribute="trailing" id="ReU-fE-PW2"/>
+                    <constraint firstItem="Hvg-YL-aeT" firstAttribute="leading" secondItem="InA-Xa-I8A" secondAttribute="leading" id="ahy-L8-EGr"/>
+                    <constraint firstAttribute="bottom" secondItem="Hvg-YL-aeT" secondAttribute="bottom" id="fzg-3U-WtI"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="dateLabel" destination="xlq-Zq-XgU" id="URB-qA-khc"/>
+                <outlet property="snippetLabel" destination="jSG-aT-BfQ" id="aAj-wh-80U"/>
+                <outlet property="thumbnailImageView" destination="A6Y-rP-pcv" id="vFX-If-64C"/>
+                <outlet property="titleLabel" destination="lWw-ya-0J0" id="EmH-HX-TIa"/>
+            </connections>
+            <point key="canvasLocation" x="0.0" y="-264.01799100449779"/>
+        </tableViewCell>
+    </objects>
+</document>

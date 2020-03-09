@@ -34,7 +34,7 @@ extension EndPoints {
     fileprivate var path: String {
         switch self {
         case .getContents(_, _, let path):
-            return "/svc/mostpopular/v2/\(path))/30.json"
+            return "/svc/mostpopular/v2/\(path)/30.json"
         }
     }
     
