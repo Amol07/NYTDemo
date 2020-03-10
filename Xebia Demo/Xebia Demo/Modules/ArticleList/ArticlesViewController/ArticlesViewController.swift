@@ -30,14 +30,14 @@ class ArticlesViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if segue.identifier == Constant.ArticlesViewController.ToArticleDetailsIdentifier, let viewModel = self.viewModel {
-//            let articlesVC = segue.destination as! ArticleDetailViewController
-//            let index = sender as! Int
-//            let contents = viewModel.contentViewModels.map { $0.article }
-//            let articlesVm = ArticlesViewModel(contents: contents, currentIndex: index)
-//            let articleDetailVm = articlesVm.detailViewModel(at: articlesVm.currentIndex)
-//            articlesVC.viewModel = articleDetailVm
-//        }
+        if segue.identifier == Constant.ArticlesViewController.ToArticleDetailsIdentifier, let viewModel = self.viewModel {
+            let articlesVC = segue.destination as! ArticleDetailViewController
+            let index = sender as! Int
+            let contents = viewModel.contentViewModels.map { $0.article }
+            let articlesVm = ArticlesViewModel(contents: contents, currentIndex: index)
+            let articleDetailVm = articlesVm.detailViewModel(at: articlesVm.currentIndex)
+            articlesVC.viewModel = articleDetailVm
+        }
     }
 }
 
@@ -137,6 +137,8 @@ extension ArticlesViewController {
             let cancelAction = UIAlertAction(title: NSLocalizedString("Cancel", comment: ""), style: .cancel, handler: nil)
             alertController.addAction(cancelAction)
             strongSelf.present(alertController, animated: true, completion: nil)
+            strongSelf.refreshControl.endRefreshing()
+            strongSelf.loadingView.stopAnimating()
         }
         self.viewModel?.refresh()
     }
