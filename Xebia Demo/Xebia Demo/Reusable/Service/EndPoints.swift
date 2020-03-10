@@ -31,14 +31,14 @@ enum EndPoints {
 // MARK: - Privates
 
 extension EndPoints {
-    fileprivate var path: String {
+    private var path: String {
         switch self {
         case .getContents(_, _, let path):
             return "/svc/mostpopular/v2/\(path)/30.json"
         }
     }
     
-    fileprivate var queryItems: [URLQueryItem] {
+    private var queryItems: [URLQueryItem] {
         switch self {
         case .getContents(let pageIndex, let offset, _):
             return [URLQueryItem(name: "offset", value: "\(pageIndex * offset)")]

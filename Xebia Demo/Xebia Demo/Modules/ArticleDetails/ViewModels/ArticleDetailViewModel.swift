@@ -11,21 +11,18 @@ import Foundation
 protocol ArticleDetailItemViewModelProtocol {}
 
 protocol ArticleDetailViewModelProtocol {
-    var index: Int { get }
     var content: Article { get }
     var itemViewModels: [ArticleDetailItemViewModelProtocol] { get }
     func itemViewModel(at index: Int) -> ArticleDetailItemViewModelProtocol?
 }
 
 class ArticleDetailViewModel {
-    let index: Int
     let content: Article
     let itemViewModels: [ArticleDetailItemViewModelProtocol]
     let downloadImageService: DownloadImageService
     
-    init(content: Article, index: Int) {
+    init(content: Article) {
         self.content = content
-        self.index = index
         self.downloadImageService = DownloadImageService(session: URLSession.shared)
         var viewModels: [ArticleDetailItemViewModelProtocol] = [
             ArticleTitleTableCellViewModel(content: content),

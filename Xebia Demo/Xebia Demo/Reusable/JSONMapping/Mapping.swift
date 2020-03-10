@@ -61,7 +61,7 @@ extension Mapping {
      * With key: "keyLevel1.keyLevel2.keyLevel3" the returning is: "valueLevel3"
      */
     private func targetJSON(for key: String) -> Any? {
-        var value: Any = json
+        var value: Any = self.json
         for levelKey in keys(from: key) {
             guard let valueJSON = value as? [String: Any],
                 let levelValue = valueJSON[levelKey] else { return nil }

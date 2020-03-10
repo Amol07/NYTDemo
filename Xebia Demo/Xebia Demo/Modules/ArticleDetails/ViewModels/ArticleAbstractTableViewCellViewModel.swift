@@ -20,6 +20,6 @@ class ArticleAbstractTableCellViewModel {
 
 extension ArticleAbstractTableCellViewModel: ArticleAbstractTableViewCellProtocol {
     var abstract: String {
-        return content.abstract ?? ""
+        return self.content.abstract ?? ""
     }
 }

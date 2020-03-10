@@ -30,13 +30,11 @@ class ArticlesViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == Constant.ArticlesViewController.ToArticleDetailsIdentifier, let viewModel = self.viewModel {
-            let articlesVC = segue.destination as! ArticleDetailViewController
-            let index = sender as! Int
-            let contents = viewModel.contentViewModels.map { $0.article }
-            let articlesVm = ArticlesViewModel(contents: contents, currentIndex: index)
-            let articleDetailVm = articlesVm.detailViewModel(at: articlesVm.currentIndex)
-            articlesVC.viewModel = articleDetailVm
+        if segue.identifier == Constant.ArticlesViewController.ToArticleDetailsIdentifier,
+            let articlesVC = segue.destination as? ArticleDetailViewController,
+            let model = sender as? ArticleTableViewCellProtocol {
+            let articlesVm = ArticleDetailViewModel(content: model.article)
+            articlesVC.viewModel = articlesVm
         }
     }
 }
@@ -71,7 +69,10 @@ extension ArticlesViewController: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: Constant.ArticlesViewController.ToArticleDetailsIdentifier, sender: indexPath.item)
+        guard let viewModel = self.viewModel else { return }
+        if let content = viewModel.contentViewModel(at: indexPath.item) {
+            self.performSegue(withIdentifier: Constant.ArticlesViewController.ToArticleDetailsIdentifier, sender: content)
+        }
     }
 }
 

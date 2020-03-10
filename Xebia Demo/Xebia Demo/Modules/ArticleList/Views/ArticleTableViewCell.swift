@@ -26,6 +26,8 @@ class ArticleTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         self.thumbnailImageView.layer.cornerRadius = self.thumbnailImageView.frame.width/2
+        self.thumbnailImageView.layer.borderColor = UIColor.lightGray.cgColor
+        self.thumbnailImageView.layer.borderWidth = 0.5
     }
 
     func set(viewModel: ArticleTableViewCellProtocol) {

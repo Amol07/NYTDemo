@@ -38,7 +38,6 @@
 		3C54DEC32417076700DA47A2 /* ArticleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C54DEC12417076700DA47A2 /* ArticleTableViewCell.xib */; };
 		3C54DECE24170E8500DA47A2 /* ArticleAbstractTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C54DEC824170E8500DA47A2 /* ArticleAbstractTableViewCellViewModel.swift */; };
 		3C54DECF24170E8500DA47A2 /* ArticleAggregateTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C54DEC924170E8500DA47A2 /* ArticleAggregateTableViewCellViewModel.swift */; };
-		3C54DED024170E8500DA47A2 /* ArticlesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C54DECA24170E8500DA47A2 /* ArticlesViewModel.swift */; };
 		3C54DED124170E8500DA47A2 /* ArticleTitleTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C54DECB24170E8500DA47A2 /* ArticleTitleTableViewCellViewModel.swift */; };
 		3C54DED224170E8500DA47A2 /* ArticleImageTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C54DECC24170E8500DA47A2 /* ArticleImageTableViewCellViewModel.swift */; };
 		3C54DED324170E8500DA47A2 /* ArticleDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C54DECD24170E8500DA47A2 /* ArticleDetailViewModel.swift */; };
@@ -108,7 +107,6 @@
 		3C54DEC12417076700DA47A2 /* ArticleTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ArticleTableViewCell.xib; sourceTree = "<group>"; };
 		3C54DEC824170E8500DA47A2 /* ArticleAbstractTableViewCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleAbstractTableViewCellViewModel.swift; sourceTree = "<group>"; };
 		3C54DEC924170E8500DA47A2 /* ArticleAggregateTableViewCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleAggregateTableViewCellViewModel.swift; sourceTree = "<group>"; };
-		3C54DECA24170E8500DA47A2 /* ArticlesViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticlesViewModel.swift; sourceTree = "<group>"; };
 		3C54DECB24170E8500DA47A2 /* ArticleTitleTableViewCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleTitleTableViewCellViewModel.swift; sourceTree = "<group>"; };
 		3C54DECC24170E8500DA47A2 /* ArticleImageTableViewCellViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleImageTableViewCellViewModel.swift; sourceTree = "<group>"; };
 		3C54DECD24170E8500DA47A2 /* ArticleDetailViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleDetailViewModel.swift; sourceTree = "<group>"; };
@@ -339,6 +337,7 @@
 		3C54DEC524170E3500DA47A2 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				3C54DEDB24170FAB00DA47A2 /* ArticleDetailViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -350,7 +349,6 @@
 				3C54DED624170FAB00DA47A2 /* ArticleAbstractTableViewCell.xib */,
 				3C54DED924170FAB00DA47A2 /* ArticleAggregateTableViewCell.swift */,
 				3C54DEDA24170FAB00DA47A2 /* ArticleAggregateTableViewCell.xib */,
-				3C54DEDB24170FAB00DA47A2 /* ArticleDetailViewController.swift */,
 				3C54DED724170FAB00DA47A2 /* ArticleImageTableViewCell.swift */,
 				3C54DEDC24170FAB00DA47A2 /* ArticleImageTableViewCell.xib */,
 				3C54DED524170FAB00DA47A2 /* ArticleTitleTableViewCell.swift */,
@@ -366,7 +364,6 @@
 				3C54DEC924170E8500DA47A2 /* ArticleAggregateTableViewCellViewModel.swift */,
 				3C54DECD24170E8500DA47A2 /* ArticleDetailViewModel.swift */,
 				3C54DECC24170E8500DA47A2 /* ArticleImageTableViewCellViewModel.swift */,
-				3C54DECA24170E8500DA47A2 /* ArticlesViewModel.swift */,
 				3C54DECB24170E8500DA47A2 /* ArticleTitleTableViewCellViewModel.swift */,
 			);
 			path = ViewModels;
@@ -538,7 +535,6 @@
 				3C54DE96241700AA00DA47A2 /* DateFormat.swift in Sources */,
 				3C54DEDD24170FAB00DA47A2 /* ArticleAbstractTableViewCell.swift in Sources */,
 				3C54DE9F2417021200DA47A2 /* RequestService.swift in Sources */,
-				3C54DED024170E8500DA47A2 /* ArticlesViewModel.swift in Sources */,
 				3C54DE922417002800DA47A2 /* ArticleResponse.swift in Sources */,
 				3C54DED124170E8500DA47A2 /* ArticleTitleTableViewCellViewModel.swift in Sources */,
 				3C54DE9D2417021200DA47A2 /* EndPoints.swift in Sources */,

@@ -22,12 +22,7 @@ class ArticleDetailViewController: UIViewController {
             self.tableView.separatorStyle = .none
         }
     }
-    
     var viewModel: ArticleDetailViewModelProtocol?
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
 }
 
 // MARK: - UITableViewDataSource
