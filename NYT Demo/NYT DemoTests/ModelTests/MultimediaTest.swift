@@ -14,12 +14,14 @@ class MultimediaTest: XCTestCase {
     
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
+        super.setUp()
         self.multimedia = Multimedia()
     }
     
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
         self.multimedia = nil
+        super.tearDown()
     }
     
     func testMapping() {
