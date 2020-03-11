@@ -19,7 +19,11 @@ class ArticlesViewController: UIViewController {
     }
     @IBOutlet private weak var loadingView: UIActivityIndicatorView!
     
-    private var refreshControl: UIRefreshControl!
+    lazy private var refreshControl: UIRefreshControl = {
+        let refreshControl = UIRefreshControl(frame: CGRect(x: 0, y: 0, width: 20, height: 20))
+        refreshControl.addTarget(self, action: #selector(self.refreshControlValueChanged), for: .valueChanged)
+        return refreshControl
+    }()
     
     var viewModel: ArticleViewModelProtocol?
 
@@ -91,8 +95,6 @@ extension ArticlesViewController {
    
     private func setupViews() {
         title = NSLocalizedString("NY Times Most Popular", comment: "")
-        self.refreshControl = UIRefreshControl(frame: CGRect(x: 0, y: 0, width: 20, height: 20))
-        self.refreshControl.addTarget(self, action: #selector(self.refreshControlValueChanged), for: .valueChanged)
         self.tableView.addSubview(refreshControl)
         self.initializeBarButtons()
     }

@@ -19,7 +19,6 @@ struct ArticleResponse {
 }
 
 // MARK: - Mappable
-
 extension ArticleResponse: Mappable {
     mutating func mapping(map: Mapping) {
         self.status = map["status"] ?? .unknown

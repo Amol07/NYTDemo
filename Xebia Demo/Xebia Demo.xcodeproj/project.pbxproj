@@ -12,7 +12,6 @@
 		3C54DE3E24167F6B00DA47A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C54DE3C24167F6B00DA47A2 /* Main.storyboard */; };
 		3C54DE4024167F6D00DA47A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C54DE3F24167F6D00DA47A2 /* Assets.xcassets */; };
 		3C54DE4324167F6D00DA47A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C54DE4124167F6D00DA47A2 /* LaunchScreen.storyboard */; };
-		3C54DE4E24167F6D00DA47A2 /* Xebia_DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C54DE4D24167F6D00DA47A2 /* Xebia_DemoTests.swift */; };
 		3C54DE5924167F6D00DA47A2 /* Xebia_DemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C54DE5824167F6D00DA47A2 /* Xebia_DemoUITests.swift */; };
 		3C54DE842416FE7500DA47A2 /* Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C54DE832416FE7500DA47A2 /* Mapping.swift */; };
 		3C54DE862416FE9100DA47A2 /* Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C54DE852416FE9100DA47A2 /* Mapper.swift */; };
@@ -50,6 +49,13 @@
 		3C54DEE324170FAB00DA47A2 /* ArticleAggregateTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C54DEDA24170FAB00DA47A2 /* ArticleAggregateTableViewCell.xib */; };
 		3C54DEE424170FAB00DA47A2 /* ArticleDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C54DEDB24170FAB00DA47A2 /* ArticleDetailViewController.swift */; };
 		3C54DEE524170FAB00DA47A2 /* ArticleImageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C54DEDC24170FAB00DA47A2 /* ArticleImageTableViewCell.xib */; };
+		3C54DEEB24177CCA00DA47A2 /* ArticleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C54DEEA24177CCA00DA47A2 /* ArticleTests.swift */; };
+		3C54DEED2418A71100DA47A2 /* ArticleResponseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C54DEEC2418A71100DA47A2 /* ArticleResponseTest.swift */; };
+		3C54DEEF2418AB4100DA47A2 /* MultimediaTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C54DEEE2418AB4100DA47A2 /* MultimediaTest.swift */; };
+		3C54DEF32418B1F500DA47A2 /* EndPointsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C54DEF22418B1F500DA47A2 /* EndPointsTests.swift */; };
+		3C54DEF52418B33B00DA47A2 /* APIErrorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C54DEF42418B33B00DA47A2 /* APIErrorTests.swift */; };
+		3C54DEF82418B5A300DA47A2 /* DateFormatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C54DEF72418B5A300DA47A2 /* DateFormatTests.swift */; };
+		3C54DEFB2418B9F300DA47A2 /* DateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C54DEFA2418B9F300DA47A2 /* DateTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,7 +84,6 @@
 		3C54DE4224167F6D00DA47A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3C54DE4424167F6D00DA47A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3C54DE4924167F6D00DA47A2 /* Xebia DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Xebia DemoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3C54DE4D24167F6D00DA47A2 /* Xebia_DemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Xebia_DemoTests.swift; sourceTree = "<group>"; };
 		3C54DE4F24167F6D00DA47A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3C54DE5424167F6D00DA47A2 /* Xebia DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Xebia DemoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C54DE5824167F6D00DA47A2 /* Xebia_DemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Xebia_DemoUITests.swift; sourceTree = "<group>"; };
@@ -119,6 +124,13 @@
 		3C54DEDA24170FAB00DA47A2 /* ArticleAggregateTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ArticleAggregateTableViewCell.xib; sourceTree = "<group>"; };
 		3C54DEDB24170FAB00DA47A2 /* ArticleDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleDetailViewController.swift; sourceTree = "<group>"; };
 		3C54DEDC24170FAB00DA47A2 /* ArticleImageTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ArticleImageTableViewCell.xib; sourceTree = "<group>"; };
+		3C54DEEA24177CCA00DA47A2 /* ArticleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleTests.swift; sourceTree = "<group>"; };
+		3C54DEEC2418A71100DA47A2 /* ArticleResponseTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleResponseTest.swift; sourceTree = "<group>"; };
+		3C54DEEE2418AB4100DA47A2 /* MultimediaTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultimediaTest.swift; sourceTree = "<group>"; };
+		3C54DEF22418B1F500DA47A2 /* EndPointsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPointsTests.swift; sourceTree = "<group>"; };
+		3C54DEF42418B33B00DA47A2 /* APIErrorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIErrorTests.swift; sourceTree = "<group>"; };
+		3C54DEF72418B5A300DA47A2 /* DateFormatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatTests.swift; sourceTree = "<group>"; };
+		3C54DEFA2418B9F300DA47A2 /* DateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,8 +181,8 @@
 		3C54DE3524167F6B00DA47A2 /* Xebia Demo */ = {
 			isa = PBXGroup;
 			children = (
-				3C54DEB12417043D00DA47A2 /* Modules */,
 				3C54DE662416AAB000DA47A2 /* Reusable */,
+				3C54DEB12417043D00DA47A2 /* Modules */,
 				3C54DE3624167F6B00DA47A2 /* AppDelegate.swift */,
 				3C54DE3824167F6B00DA47A2 /* SceneDelegate.swift */,
 				3C54DE3C24167F6B00DA47A2 /* Main.storyboard */,
@@ -184,7 +196,11 @@
 		3C54DE4C24167F6D00DA47A2 /* Xebia DemoTests */ = {
 			isa = PBXGroup;
 			children = (
-				3C54DE4D24167F6D00DA47A2 /* Xebia_DemoTests.swift */,
+				3C54DEF92418B9CA00DA47A2 /* Extensions */,
+				3C54DEF62418B58F00DA47A2 /* Utility */,
+				3C54DEF12418B1C800DA47A2 /* ServiceTests */,
+				3C54DEF02418B17700DA47A2 /* ViewModelsTest */,
+				3C54DEE924177C9F00DA47A2 /* ModelTests */,
 				3C54DE4F24167F6D00DA47A2 /* Info.plist */,
 			);
 			path = "Xebia DemoTests";
@@ -369,6 +385,48 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
+		3C54DEE924177C9F00DA47A2 /* ModelTests */ = {
+			isa = PBXGroup;
+			children = (
+				3C54DEEA24177CCA00DA47A2 /* ArticleTests.swift */,
+				3C54DEEC2418A71100DA47A2 /* ArticleResponseTest.swift */,
+				3C54DEEE2418AB4100DA47A2 /* MultimediaTest.swift */,
+			);
+			path = ModelTests;
+			sourceTree = "<group>";
+		};
+		3C54DEF02418B17700DA47A2 /* ViewModelsTest */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModelsTest;
+			sourceTree = "<group>";
+		};
+		3C54DEF12418B1C800DA47A2 /* ServiceTests */ = {
+			isa = PBXGroup;
+			children = (
+				3C54DEF22418B1F500DA47A2 /* EndPointsTests.swift */,
+				3C54DEF42418B33B00DA47A2 /* APIErrorTests.swift */,
+			);
+			path = ServiceTests;
+			sourceTree = "<group>";
+		};
+		3C54DEF62418B58F00DA47A2 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				3C54DEF72418B5A300DA47A2 /* DateFormatTests.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		3C54DEF92418B9CA00DA47A2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3C54DEFA2418B9F300DA47A2 /* DateTests.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -545,7 +603,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3C54DE4E24167F6D00DA47A2 /* Xebia_DemoTests.swift in Sources */,
+				3C54DEEF2418AB4100DA47A2 /* MultimediaTest.swift in Sources */,
+				3C54DEF32418B1F500DA47A2 /* EndPointsTests.swift in Sources */,
+				3C54DEFB2418B9F300DA47A2 /* DateTests.swift in Sources */,
+				3C54DEF82418B5A300DA47A2 /* DateFormatTests.swift in Sources */,
+				3C54DEF52418B33B00DA47A2 /* APIErrorTests.swift in Sources */,
+				3C54DEEB24177CCA00DA47A2 /* ArticleTests.swift in Sources */,
+				3C54DEED2418A71100DA47A2 /* ArticleResponseTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
